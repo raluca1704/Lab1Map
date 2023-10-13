@@ -112,6 +112,11 @@ public class Main {
 
         int kannkaufen = ElectronicShop.kannKaufen(preist, preisusb, 62);
         System.out.print("\nDen Deldbetrag die Markus ausgeben wird ist   " + kannkaufen);
+
+        JavaUniversitatTests.ausreichendeNichtTest();
+        JavaUniversitatTests.durschnittWert();
+//        JavaUniversitatTests.ausreichendeNichtTest();
+//        JavaUniversitatTests.ausreichendeNichtTest();
     }
 
 
