@@ -119,6 +119,7 @@ public class Main {
         JavaUniversitatTests.abgerundetenNoten();
         Problem2Tests.maxZahl();
         Problem2Tests.minZahl();
+        Problem2Tests.maxSum();
 
     }
 

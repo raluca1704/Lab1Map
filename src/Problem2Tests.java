@@ -13,4 +13,11 @@ public class Problem2Tests {
         assert (output==expectedOutput);
         System.out.println("\nMinZahl Test Succes.");
     }
+    public static void maxSum(){
+        int[] input = {4, 8, 3, 10, 17};
+        int expectedOutput=Problem2.maxZahl(input);
+        int output=39;
+        assert (output==expectedOutput);
+        System.out.println("\nMaxSum Test Succes.");
+    }
 }
