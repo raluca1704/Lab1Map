@@ -115,8 +115,8 @@ public class Main {
 
         JavaUniversitatTests.ausreichendeNichtTest();
         JavaUniversitatTests.durschnittWert();
-//        JavaUniversitatTests.ausreichendeNichtTest();
-//        JavaUniversitatTests.ausreichendeNichtTest();
+        JavaUniversitatTests.abgerundetenMax();
+        JavaUniversitatTests.abgerundetenNoten();
     }
 
 
