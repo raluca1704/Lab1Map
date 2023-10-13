@@ -1,11 +1,18 @@
 public class JavaUniversitat {
     public static int[] ausreichendeNicht(int[] noten) {
-        int[] nichtausreichend = new int[100];
         int cnt = 0;
-        for (int i : noten) {
+        for (int i :noten) {
             if (i < 40) {
                 cnt++;
+            }
+        }
+        int[] nichtausreichend = new int[cnt];
+        cnt = 0;
+        for (int i : noten) {
+            if (i < 40) {
+
                 nichtausreichend[cnt] = i;
+                cnt++;
             }
 
         }
