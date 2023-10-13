@@ -40,13 +40,13 @@ public class Main {
         System.out.print("\nDie maximale Zahl ist " + maxzahl);
 
         int minzahl = Problem2.minZahl(zahlen);
-        System.out.print("\nDie maximale Zahl ist " + minzahl);
+        System.out.print("\nDie minimale Zahl ist " + minzahl);
 
         int maxsum = Problem2.maxSum(zahlen);
         System.out.print("\nDie maximale Sume ist " + maxsum);
 
         int minsum = Problem2.minSum(zahlen);
-        System.out.print("\nDie maximale Sume ist " + minsum);
+        System.out.print("\nDie minimale Sume ist " + minsum);
 
         int[] arr1 = {1, 3, 0, 0, 0, 0, 0, 0, 0};
         int[] arr2 = {8, 7, 0, 0, 0, 0, 0, 0, 0};
@@ -117,6 +117,9 @@ public class Main {
         JavaUniversitatTests.durschnittWert();
         JavaUniversitatTests.abgerundetenMax();
         JavaUniversitatTests.abgerundetenNoten();
+        Problem2Tests.maxZahl();
+        Problem2Tests.minZahl();
+
     }
 
 
