@@ -4,12 +4,22 @@ public class Main {
 
 
     public static void main(String[] args) {
-        JavaUniversitat.();
-    }
+
+        int[] noten = {35, 46, 48, 60, 45, 30, 75, 23, 12, 11, 67, 59, 43, 100, 98};
+
+        int[] nichtausreichend =JavaUniversitat.ausreichendeNicht(noten);
+
+        System.out.print("Nicht ausreichende Noten:");
+        for (int j : nichtausreichend) {
+            if (j != 0) {
+                System.out.print(j + " ");
+
+            }
+    }}
 //        JavaUniversitat gruppe = new JavaUniversitat();
 //        gruppe.noten={35, 46, 48, 60, 45, 30, 75, 23, 12, 11, 67, 59, 43, 100, 98};
 //        gruppe.nichtausreichend(noten);
-//        int[] noten = {35, 46, 48, 60, 45, 30, 75, 23, 12, 11, 67, 59, 43, 100, 98};
+
 //        int[] nichtausreichend = ausreichendeNicht(noten);
 //
 //        System.out.print("Nicht ausreichende Noten:");
