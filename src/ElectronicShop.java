@@ -43,17 +43,15 @@ public class ElectronicShop {
         int maxpreis = 0;
         for (int i = 0; i < preist.length; i++) {
             for (int j = 0; j < preisusb.length; j++) {
-                if ((preist[i] + preisusb[j]) > maxpreis && (preist[i] + preisusb[j] )<=budget) {
+                if ((preist[i] + preisusb[j]) > maxpreis && (preist[i] + preisusb[j]) <= budget) {
                     maxpreis = preist[i] + preisusb[j];
                 }
             }
 
         }
-        if( maxpreis== 0) {
+        if (maxpreis == 0) {
             return -1;
-        }
-        else
-        {
+        } else {
             return maxpreis;
         }
     }

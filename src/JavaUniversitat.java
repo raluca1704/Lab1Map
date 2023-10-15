@@ -36,40 +36,39 @@ public class JavaUniversitat {
 
     public static int[] abgerundetenNoten(int[] noten) {
         int cnt = 0;
-        for (int v=0;v<noten.length; v++) {
-            if (noten[v] > 38 && noten[v] % 5 != 0 ){
-                if(noten[v]%10!=1 && noten[v]%10!=2 && noten[v]%10!=6 && noten[v]%10!=7){
-                cnt++;
+        for (int v = 0; v < noten.length; v++) {
+            if (noten[v] > 38 && noten[v] % 5 != 0) {
+                if (noten[v] % 10 != 1 && noten[v] % 10 != 2 && noten[v] % 10 != 6 && noten[v] % 10 != 7) {
+                    cnt++;
                 }
             }
         }
         int[] abgerundeten = new int[cnt];
 
-            cnt = 0;
-            for (int i : noten) {
-                if (i < 38 || i % 5 == 0) {
-                    //i nu se rotunjeste
-                } else {
+        cnt = 0;
+        for (int i : noten) {
+            if (i < 38 || i % 5 == 0) {
+                //i nu se rotunjeste
+            } else {
 
-                    int j = i;
-                    boolean x = true;
-                    while (x) {
-                        j++;
-                        if (j % 5 == 0) {
-                            x = false;
-                            if ((j - i) < 3) {
-                                abgerundeten[cnt] = j;
-                                cnt++;
-
-                            }
+                int j = i;
+                boolean x = true;
+                while (x) {
+                    j++;
+                    if (j % 5 == 0) {
+                        x = false;
+                        if ((j - i) < 3) {
+                            abgerundeten[cnt] = j;
+                            cnt++;
 
                         }
+
                     }
                 }
             }
-        return abgerundeten;
         }
-
+        return abgerundeten;
+    }
 
 
     public static int abgerundetenMax(int[] abgerundeten) {
