@@ -1,8 +1,6 @@
 
 import org.junit.jupiter.api.Test;
-import java.util.Arrays;
 
-import static java.lang.Math.round;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -31,15 +29,17 @@ public class JavaUniversitatTests {
         int[] input={35, 46, 48, 60, 45, 30, 75, 23, 12, 11, 67, 59, 43, 100, 98};
         int[] output=JavaUniversitat.abgerundetenNoten(input);
         int[] expectedOutput ={50, 60, 45, 100};
-        System.out.println(Arrays.toString(output));
+       // System.out.println(Arrays.toString(output));
         assertArrayEquals(expectedOutput,output);
         System.out.println("\nAbgerundetenNoten Test Succes.");
     }
-    public static void abgerundetenMax(){
+    @Test
+    public  void abgerundetenMax(){
         int[] input={35, 46, 48, 60, 45, 30, 75, 23, 12, 11, 67, 59, 43, 100, 98};
-        int output=JavaUniversitat.abgerundetenMax(input);
+        int[] abgerundetenNoten =JavaUniversitat.abgerundetenNoten(input);
+        int output=JavaUniversitat.abgerundetenMax(abgerundetenNoten);
         int expectedOutput =100;
-        assert(output == expectedOutput);
+        assertEquals(expectedOutput,output);
         System.out.println("\nAbgerundetenMax Test Succes.");
     }
 }

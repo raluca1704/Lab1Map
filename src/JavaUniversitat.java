@@ -36,9 +36,9 @@ public class JavaUniversitat {
 
     public static int[] abgerundetenNoten(int[] noten) {
         int cnt = 0;
-        for (int v : noten) {
+        for (int v=0;v<noten.length; v++) {
             if (noten[v] > 38 && noten[v] % 5 != 0 ){
-                if(noten[v]%10!=1 || noten[v]%10!=2 || noten[v]%10!=6 || noten[v]%10!=7){
+                if(noten[v]%10!=1 && noten[v]%10!=2 && noten[v]%10!=6 && noten[v]%10!=7){
                 cnt++;
                 }
             }
