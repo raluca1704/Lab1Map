@@ -1,26 +1,37 @@
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 public class Problem2Tests {
-    public static void maxZahl(){
+    @Test
+    public  void maxZahl(){
         int[] input = {4, 8, 3, 10, 17};
         int expectedOutput=Problem2.maxZahl(input);
         int output=17;
-        assert (output==expectedOutput):"\nMaxZahl Test Succes.";
+        assertEquals(output,expectedOutput);
+        System.out.println("\nMaxZahl Test Succes.");
     }
-    public static void minZahl(){
+    @Test
+    public void minZahl(){
         int[] input = {4, 8, 3, 10, 17};
-        int expectedOutput=Problem2.maxZahl(input);
+        int expectedOutput=Problem2.minZahl(input);
         int output=3;
-        assert (output==expectedOutput):"\nMinZahl Test Succes.";
+        assertEquals(output,expectedOutput);
+        System.out.println("\nMinZahl Test Succes.");
     }
-    public static void maxSum(){
+    @Test
+    public void maxSum(){
         int[] input = {4, 8, 3, 10, 17};
-        int expectedOutput=Problem2.maxZahl(input);
+        int expectedOutput=Problem2.maxSum(input);
         int output=39;
-        assert (output==expectedOutput):"\nMaxSum Test Succes.";
+        assertEquals(output,expectedOutput);
+        System.out.println("\nMaxSum Test Succes.");
     }
-    public static void minSum(){
+    @Test
+    public void minSum(){
         int[] input = {4, 8, 3, 10, 17};
-        int expectedOutput=Problem2.maxZahl(input);
+        int expectedOutput=Problem2.minSum(input);
         int output=25;
-        assert (output==expectedOutput):"\nMinSum Test Succes.";
+        assertEquals(output,expectedOutput);
+        System.out.println("\nMinSum Test Succes.");
     }
 }
