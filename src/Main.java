@@ -91,7 +91,7 @@ public class Main {
         }
         int[] array = {2, 3, 6, 0, 0, 0, 0, 0, 0};
         int[] arraydiv = Problem3.arrDiv(array, 2);
-        System.out.print("\nDie Differenz des Zahlen ist ");
+        System.out.print("\nDie Division des Zahlen ist ");
         for (int j : arraydiv) {
 
             System.out.print(j + " ");
