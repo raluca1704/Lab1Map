@@ -32,8 +32,8 @@ public class Main {
             }
 
         }
-        //int abgerundetenmax = JavaUniversitat.abgerundetenMax(abgerundeten);
-        //System.out.print("\nDie maximale abgerundeten Noten ist " + abgerundetenmax);
+        int abgerundetenmax = JavaUniversitat.abgerundetenMax(abgerundeten);
+        System.out.print("\nDie maximale abgerundeten Noten ist " + abgerundetenmax);
 
         int[] zahlen = {4, 8, 3, 10, 17};
         int maxzahl = Problem2.maxZahl(zahlen);
