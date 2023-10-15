@@ -30,9 +30,9 @@ public class ElectronicShop {
     }
 
     public static int unterBudget(int[] preisusb, int budget) {
-        int max = preisusb[0];
+        int max = 0;
         for (int i = 1; i < preisusb.length; i++) {
-            if (max < preisusb[i] && max < budget) {
+            if (max < preisusb[i] && preisusb[i] <= budget) {
                 max = preisusb[i];
             }
         }
@@ -41,8 +41,8 @@ public class ElectronicShop {
 
     public static int kannKaufen(int[] preist, int[] preisusb, int budget) {
         int maxpreis = 0;
-        for (int i = 1; i < preist.length; i++) {
-            for (int j = 1; j < preisusb.length; j++) {
+        for (int i = 0; i < preist.length; i++) {
+            for (int j = 0; j < preisusb.length; j++) {
                 if ((preist[i] + preisusb[j]) > maxpreis && (preist[i] + preisusb[j] )<=budget) {
                     maxpreis = preist[i] + preisusb[j];
                 }
