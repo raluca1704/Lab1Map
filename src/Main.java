@@ -68,27 +68,15 @@ public class Main {
 
 
         }
-        int[] arr7 = {8, 3, 6, 0, 0, 0, 0, 0, 0};
-        if (arr7[0] > 4) {
-            int[] arr8 = Problem3.arrMul(arr7, 2);
+        int[] arr7 = {8, 3, 6, 0};
+            int[] arr8 = Problem3.arrMul(arr7, 3);
             System.out.print("\nDie Multiplikation des Zahlen ist ");
             for (int j : arr8) {
 
                 System.out.print(j + " ");
 
             }
-        } else {
 
-            int[] arr9 = Problem3.arrMul(arr7, 2);
-            System.out.print("\nDie Multiplikation des Zahlen ist ");
-            for (int j : arr9) {
-
-                System.out.print(j + " ");
-
-
-            }
-
-        }
         int[] array = {2, 3, 6, 0, 0, 0, 0, 0, 0};
         int[] arraydiv = Problem3.arrDiv(array, 2);
         System.out.print("\nDie Division des Zahlen ist ");
@@ -113,11 +101,8 @@ public class Main {
         int kannkaufen = ElectronicShop.kannKaufen(preist, preisusb, 62);
         System.out.print("\nDen Deldbetrag die Markus ausgeben wird ist   " + kannkaufen);
 
-        //JavaUniversitatTests.ausreichendeNichtTest();
-
-
-//        var test = new JavaUniversitatTests;
-//        test.ausreichendeNichtTest();
+//        var test = new JavaUniversitatTests();
+//        test.abgerundetenMaxTestBad();
 
     }
 

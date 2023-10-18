@@ -42,7 +42,7 @@ public class Problem3 {
 
     public static int[] arrMul(int[] arr7, int ziff) {
         int rest = 0;
-        int[] arr8 = new int[arr7.length + 1];
+        int[] arr8 = new int[arr7.length];
         int[] arr9 = new int[arr8.length + 1];
 
         for (int i = arr7.length - 1; i >= 0; i--) {
@@ -52,6 +52,7 @@ public class Problem3 {
             } else {
                 arr8[i] = arr7[i] * ziff + rest;
                 if (arr8[i] > 9) {
+                    arr8[i]=arr8[i]%10;
                     rest = 1;
                 } else rest = 0;
             }
