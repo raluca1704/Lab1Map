@@ -1,6 +1,4 @@
 public class Problem3 {
-
-
     public static int[] arrSumme(int[] termensumm, int[] termensumm2) {
         int rest = 0;
         int[] resultsumm = new int[termensumm.length + 1];
