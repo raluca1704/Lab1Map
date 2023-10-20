@@ -1,4 +1,20 @@
 public class Problem3 {
+
+
+    public static int[] arrDiff(int[] deimpartit, int[] impartitor) {
+
+        int[] cat = new int[deimpartit.length];
+        for (int i = deimpartit.length - 1; i >= 0; i--) {
+            if (deimpartit[i] < impartitor[i]) {
+                cat[i] = deimpartit[i] + 10 - impartitor[i];
+                deimpartit[i - 1] = deimpartit[i - 1] - 1;
+
+            } else {
+                cat[i] = deimpartit[i] - impartitor[i];
+            }
+        }
+        return cat;
+    }
     public static int[] arrSumme(int[] termensumm, int[] termensumm2) {
         int rest = 0;
         int[] resultsumm = new int[termensumm.length + 1];
@@ -22,22 +38,6 @@ public class Problem3 {
         }
         return resultsumm;
     }
-
-    public static int[] arrDiff(int[] deimpartit, int[] impartitor) {
-
-        int[] cat = new int[deimpartit.length];
-        for (int i = deimpartit.length - 1; i >= 0; i--) {
-            if (deimpartit[i] < impartitor[i]) {
-                cat[i] = deimpartit[i] + 10 - impartitor[i];
-                deimpartit[i - 1] = deimpartit[i - 1] - 1;
-
-            } else {
-                cat[i] = deimpartit[i] - impartitor[i];
-            }
-        }
-        return cat;
-    }
-
     public static int[] arrMul(int[] termeninmultire, int ziff) {
         int rest = 0;
         int[] resultinmultire = new int[termeninmultire.length];
