@@ -56,6 +56,18 @@ public class Problem3Tests {
     }
 
     @Test
+    public void arrMulTest2Good() {
+        int[] input1 = {9};
+        int input2 = 2;
+
+        int[] expectedOutput = Problem3.arrMul(input1, input2);
+        int[] output = {1,8};
+        assertArrayEquals(output, expectedOutput);
+        System.out.println("\nArrMul Test Good Succes.");
+
+
+    }
+    @Test
     public void arrMulTestGood() {
         int[] input1 = {8, 3, 6, 0};
         int input2 = 3;

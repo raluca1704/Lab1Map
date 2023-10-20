@@ -1,58 +1,58 @@
 public class Problem3 {
 
 
-    public static int[] arrSumme(int[] arr1, int[] arr2) {
+    public static int[] arrSumme(int[] termensumm, int[] termensumm2) {
         int rest = 0;
-        int[] arr3 = new int[arr1.length + 1];
-        for (int i = arr1.length - 1; i >= 0; i--) {
+        int[] resultsumm = new int[termensumm.length + 1];
+        for (int i = termensumm.length - 1; i >= 0; i--) {
 
-            if ((arr1[i] + arr2[i]) < 10) {
-                arr3[i] = arr1[i] + arr2[i] + rest;
-                if (arr3[i] >= 10) {
-                    arr3[i] = arr3[i] % 10;
+            if ((termensumm[i] + termensumm2[i]) < 10) {
+                resultsumm[i] = termensumm[i] + termensumm2[i] + rest;
+                if (resultsumm[i] >= 10) {
+                    resultsumm[i] = resultsumm[i] % 10;
                     rest = 1;
                 }
             } else {
-                arr3[i] = (arr1[i] + arr2[i]) % 10 + rest;
+                resultsumm[i] = (termensumm[i] + termensumm2[i]) % 10 + rest;
                 rest = 1;
 
             }
 
         }
         if (rest == 1) {
-            arr3[0] = rest;
+            resultsumm[0] = rest;
         }
-        return arr3;
+        return resultsumm;
     }
 
-    public static int[] arrDiff(int[] arr4, int[] arr5) {
+    public static int[] arrDiff(int[] deimpartit, int[] impartitor) {
 
-        int[] arr6 = new int[arr4.length];
-        for (int i = arr4.length - 1; i >= 0; i--) {
-            if (arr4[i] < arr5[i]) {
-                arr6[i] = arr4[i] + 10 - arr5[i];
-                arr4[i - 1] = arr4[i - 1] - 1;
+        int[] cat = new int[deimpartit.length];
+        for (int i = deimpartit.length - 1; i >= 0; i--) {
+            if (deimpartit[i] < impartitor[i]) {
+                cat[i] = deimpartit[i] + 10 - impartitor[i];
+                deimpartit[i - 1] = deimpartit[i - 1] - 1;
 
             } else {
-                arr6[i] = arr4[i] - arr5[i];
+                cat[i] = deimpartit[i] - impartitor[i];
             }
         }
-        return arr6;
+        return cat;
     }
 
-    public static int[] arrMul(int[] arr7, int ziff) {
+    public static int[] arrMul(int[] termeninmultire, int ziff) {
         int rest = 0;
-        int[] arr8 = new int[arr7.length];
-        int[] arr9 = new int[arr8.length + 1];
+        int[] resultinmultire = new int[termeninmultire.length];
+        int[] resultinmultiredinminte= new int[resultinmultire.length + 1];
 
-        for (int i = arr7.length - 1; i >= 0; i--) {
-            if (arr7[i] * ziff > 9) {
-                arr8[i] = (arr7[i] * ziff) % 10 + rest;
-                rest = (arr7[i] * ziff) / 10;
+        for (int i = termeninmultire.length - 1; i >= 0; i--) {
+            if (termeninmultire[i] * ziff > 9) {
+                resultinmultire[i] = (termeninmultire[i] * ziff) % 10 + rest;
+                rest = (termeninmultire[i] * ziff) / 10;
             } else {
-                arr8[i] = arr7[i] * ziff + rest;
-                if (arr8[i] > 9) {
-                    arr8[i]=arr8[i]%10;
+                resultinmultire[i] = termeninmultire[i] * ziff + rest;
+                if (resultinmultire[i] > 9) {
+                    resultinmultire[i]=resultinmultire[i]%10;
                     rest = 1;
                 } else rest = 0;
             }
@@ -60,12 +60,12 @@ public class Problem3 {
         }
         if (rest > 0) {
 
-            for (int i = arr9.length - 1; i > 0; i--) {
-                arr9[i] = arr8[i - 1];
+            for (int i = resultinmultiredinminte.length - 1; i > 0; i--) {
+                resultinmultiredinminte[i] = resultinmultire[i - 1];
             }
-            arr9[0] = rest;
-            return arr9;
-        } else return arr8;
+            resultinmultiredinminte[0] = rest;
+            return resultinmultiredinminte;
+        } else return resultinmultire;
     }
 
 
